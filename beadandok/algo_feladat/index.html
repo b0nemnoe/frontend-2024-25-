@@ -18,8 +18,12 @@
     }
     div.information{
         border: rgb(0, 153, 255) 2px solid;
-        padding: 2px;
         border-radius: 15px;
+    }
+    div.alert{
+        border: rgb(255, 222, 5) 2px solid;
+        border-radius: 15px;
+        padding: 0;
     }
     h4{
         margin: 0;
@@ -28,6 +32,17 @@
         background-color: lightblue;
         
     }
+    .alert>.title{
+        background-color: rgb(255, 222, 5);
+        
+    }
+    .title{
+        padding: 5px;
+        border-radius: 13px 13px 0 0;
+    }
+    .content{
+        padding: 5px;
+    }
 </style>
 
 <body>
@@ -35,13 +50,13 @@
 
         <div class="information">
             <h4 class="title">&#9432; Információ</h4>
-            <p>Az alábbi feladatokban különböző algoritmusokat kell elkészíteni. Minden algoritmushoz tartozik egy kiinduló Python kód, amely tartalmaz unittest teszteket is.</p>
+            <p class="content">Az alábbi feladatokban különböző algoritmusokat kell elkészíteni. Minden algoritmushoz tartozik egy kiinduló Python kód, amely tartalmaz unittest teszteket is.</p>
         </div>
 
         <div class="alert">
 
             <h4 class="title">&#9888; Idő- és memóriakorlátozások</h4>
-            <p>A feladatok megodásánál figyelj a megadott idő- és memóriakorlátozásokra!</p>
+            <p class="content">A feladatok megodásánál figyelj a megadott idő- és memóriakorlátozásokra!</p>
             <ul>
                 <li>Időlimit: 1,00 sec</li>
                 <li>Memória limit: 512 MB</li>
