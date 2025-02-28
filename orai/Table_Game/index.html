@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Game</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="table-container">
+        <div class="table">
+            <div class="row">
+                <button class="a" onclick="clickA()">A</button>
+                <div class="cell" id="cell-0-0">0</div>
+                <div class="cell" id="cell-0-1">0</div>
+                <div class="cell" id="cell-0-2">0</div>
+                <button class="b" onclick="clickB()">B</button>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-1-0">0</div>
+                <div class="cell" id="cell-1-1">0</div>
+                <div class="cell" id="cell-1-2">0</div>
+            </div>
+            <div class="row">
+                <button class="c" onclick="clickC()">C</button>
+                <div class="cell" id="cell-2-0">0</div>
+                <div class="cell" id="cell-2-1">0</div>
+                <div class="cell" id="cell-2-2">0</div>
+                <button class="d" onclick="clickD()">D</button>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="clear" onclick="clearTable()">Clear table</button>
+            <button class="quit" onclick="quit()">Quit</button>
+        </div>
+    </div>
+</body>
+</html>

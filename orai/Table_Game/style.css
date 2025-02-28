@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.table-container {
+    text-align: center;
+}
+
+.table {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 18px;
+    margin: 2px;
+    background-color: #fff;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.a, .b, .c, .d {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+}
+
+.clear {
+    background-color: red;
+    color: white;
+}
+
+.quit {
+    background-color: green;
+    color: white;
+}
