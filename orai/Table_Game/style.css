@@ -64,3 +64,6 @@ button:hover {
     background-color: green;
     color: white;
 }
+input{
+    width: 5%;
+}

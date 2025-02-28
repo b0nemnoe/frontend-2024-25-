@@ -115,5 +115,31 @@
         updateTable();
     }
 
+    function add() {
+        let a = parseInt(document.getElementById("a").value);
+        let b = parseInt(document.getElementById("b").value);
+        let c = parseInt(document.getElementById("c").value);
+        let d = parseInt(document.getElementById("d").value);
+
+        if (isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d)) {
+            alert("Invalid input: Please enter valid numbers.");
+            return;
+        }
+        let result = [a, b, c, d];
+        console.log(result);
+        fetch("http://localhost:3000/fours", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ numbers: result })
+        })
+        .then(response => response.json())
+        .then(data => console.log("Server response:", data))
+        .catch(error => console.error("Error sending data:", error));
+
+        alert("DATA SENT TO SERVER")
+    }
+
 
     updateTable();
