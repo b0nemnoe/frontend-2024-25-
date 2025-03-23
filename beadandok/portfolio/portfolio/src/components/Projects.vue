@@ -19,6 +19,17 @@
   </section>
 </template>
 
+<style scoped>
+  .card-body:hover {
+    transform: translateY(-10px); /* Kártya felemelése */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Árnyék erősítése */
+  }
+  .card-body {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
 <script>
 export default {
   name: "Projects",
