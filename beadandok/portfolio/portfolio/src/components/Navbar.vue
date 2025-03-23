@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand m-1" href="#">Németh</a><a class="navbar-brand text-secondary" href="#">Noel</a>
+      <div class="d-flex flex-wrap align-items-center">
+        <a class="navbar-brand m-1" href="#">Németh</a>
+        <a class="navbar-brand text-secondary" href="#">Noel</a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>

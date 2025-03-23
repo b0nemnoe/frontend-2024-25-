@@ -1,8 +1,27 @@
 import './assets/main.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { OiLogoGithub, BiGithub, ViFileTypeVue,  ViFileTypeJava, ViFileTypeCsharp2, ViFileTypePython} from "oh-vue-icons/icons";
-addIcons(OiLogoGithub, BiGithub, ViFileTypeVue,  ViFileTypeJava, ViFileTypeCsharp2, ViFileTypePython);
+import {
+    OiLogoGithub,
+    BiGithub,
+    ViFileTypeVue,
+    ViFileTypeJava,
+    ViFileTypeCsharp2,
+    ViFileTypePython,
+    BiInstagram,
+    BiFacebook
+} from "oh-vue-icons/icons";
+
+addIcons(
+    OiLogoGithub,
+    BiGithub,
+    ViFileTypeVue,
+    ViFileTypeJava,
+    ViFileTypeCsharp2,
+    ViFileTypePython,
+    BiInstagram,
+    BiFacebook
+);
 import { createApp } from 'vue'
 
 import { createPinia } from 'pinia'

@@ -6,9 +6,12 @@
         <div v-for="lang in languages" :key="lang.id" class="col-md-6 mb-4">
           <div class="card shadow-sm h-100">
             <div class="card-body d-flex align-items-center">
-              <v-icon :name="lang.icon" scale="2" class="text-primary"></v-icon>
+              <v-icon
+                  :name="lang.icon"
+                  scale="2"
+                  class="text-primary icon">
+              </v-icon>
               <h3>&nbsp;{{ lang.title }} </h3>
-
             </div>
             <p class="p-3"> {{ lang.description }}</p>
           </div>
@@ -19,13 +22,17 @@
 </template>
 
 <style scoped>
-.card-body:hover {
-  transform: translateY(-10px); /* Kártya felemelése */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Árnyék erősítése */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.card-body {
+.card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 </style>
 
