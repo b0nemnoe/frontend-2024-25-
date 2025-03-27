@@ -52,7 +52,7 @@ export default {
         { id: 1, title: "🛒💳Webshop", description: "https://github.com/b0nemnoe/bolt-ajax" },
         { id: 2, title: "💈✂️Barbershop", description: "https://github.com/b0nemnoe/idopontFoglalas" },
         { id: 3, title: "🗡💯CodeWars Points", description: "https://github.com/b0nemnoe/codewarsProject"},
-        { id: 4, title: "🖊📚VasváriApp", description: ""}
+        { id: 4, title: "🖊📚VasváriApp", description: "https://vasvariapp.hu/"}
       ]
     };
   }
